@@ -20,16 +20,16 @@ $asset = yii\gii\GiiAsset::register($this);
     <?php $this->head() ?>
 </head>
 <body>
-    <div class="container-fluid page-container">
+    <div class="container-fluid">
         <?php $this->beginBody() ?>
         <?php
         NavBar::begin([
             'brandLabel' => Html::img($asset->baseUrl . '/logo.png'),
             'brandUrl' => ['default/index'],
-            'options' => ['class' => 'navbar-inverse navbar-fixed-top'],
+            'options' => ['class' => 'navbar-dark bg-dark navbar-fixed-top navbar-expand-md'],
         ]);
         echo Nav::widget([
-            'options' => ['class' => 'nav navbar-nav navbar-right'],
+            'options' => ['class' => 'navbar-nav ml-auto'],
             'items' => [
                 ['label' => 'Home', 'url' => ['default/index']],
                 ['label' => 'Help', 'url' => 'http://www.yiiframework.com/doc-2.0/ext-gii-index.html'],
